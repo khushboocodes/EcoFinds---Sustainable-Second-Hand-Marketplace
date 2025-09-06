@@ -157,6 +157,33 @@ npm run test:coverage
 
 #🚦 API Documentation
 
+Authentication Endpoints
+
+POST /api/auth/register - User registration
+
+POST /api/auth/login - User login
+
+GET /api/auth/profile - Get user profile
+
+Product Endpoints
+
+GET /api/products - Get all products
+
+POST /api/products - Create new product
+
+GET /api/products/:id - Get product details
+
+PUT /api/products/:id - Update product
+
+DELETE /api/products/:id - Delete product
+
+Cart Endpoints
+
+GET /api/cart - Get user's cart
+
+POST /api/cart - Add item to cart
+
+DELETE /api/cart/:id - Remove item from cart
 ---
 
 ---

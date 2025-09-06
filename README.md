@@ -51,19 +51,18 @@ To become the go-to destination for a conscious community seeking unique finds a
 # 🛠️ Technology Stack  
 
 ### Frontend  
-- Framework: [Your Frontend Framework - React/Flutter/etc.]  
-- Styling: [CSS/Styled Components/Tailwind CSS]  
-- State Management: [Redux/Context API/Provider]  
+- Framework: React  
+- Styling: CSS/JS    
 
 ### Backend  
-- Server: [Node.js/Python/Java]  
-- Database: [MongoDB/PostgreSQL/Firebase]  
-- Authentication: [JWT/Firebase Auth/OAuth]  
+- Server: Node.js/Python(Django)  
+- Database: PostgreSQL  
+- Authentication: [JWT/Supbase Auth/OAuth]  
 
 ### Development Tools  
 - Version Control: Git & GitHub  
-- Package Manager: [npm/yarn/pip]  
-- Testing: [Jest/Cypress/Unit Tests]  
+- Package Manager: npm/pip  
+- Testing: Unit Tests  
 
 ---
 
@@ -94,3 +93,127 @@ cp .env.example .env
 npm start
 # or
 yarn start
+```
+
+---
+
+# 📁 Project Structure
+
+project_full_connected/
+│
+├── backend/                         # Django backend
+│   ├── manage.py
+│   ├── requirements.txt              # Django, DRF, SimpleJWT, corsheaders
+│   ├── danjo/                        # Django project root
+│   │   ├── _init_.py
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   │
+│   └── accounts/                     # Custom accounts app
+│       ├── _init_.py
+│       ├── admin.py
+│       ├── apps.py
+│       ├── migrations/
+│       │   └── _init_.py
+│       ├── models.py                 # Custom User (AbstractUser subclass)
+│       ├── serializers.py            # Register + User serializers
+│       ├── urls.py                   # /api/accounts/register/ + /api/accounts/me/
+│       └── views.py                  # RegisterView, ProfileView
+│
+├── frontend/                         # React frontend
+│   ├── package.json                  # React + React Router + proxy for /api
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── App.js                    # Routing setup
+│       ├── api.js                    # fetch wrapper with auto-refresh
+│       ├── utils/
+│       │   └── auth.js               # token storage + helpers
+│       └── pages/                    # React pages
+│           ├── Login.js              # Login form
+│           ├── Register.js           # Register form
+│           └── Dashboard.js          # Protected dashboard (profile info)
+│
+└── original_project/                 # Your original uploaded files (kept intact)
+
+---
+
+# 🧪 Testing
+
+Run the test suite:
+```bash
+npm test
+```
+
+For coverage reports:
+```bash
+npm run test:coverage
+```
+---
+
+#🚦 API Documentation
+
+---
+
+---
+# 🤝 Contributing
+
+We welcome contributions! Please see our Contributing Guidelines for details.
+Development Workflow
+
+```bash
+# Fork the repository
+# Create a feature branch
+git checkout -b feature/amazing-feature
+
+# Commit your changes
+git commit -m 'Add some amazing feature'
+
+# Push to the branch
+git push origin feature/amazing-feature
+
+# Open a Pull Request
+```
+---
+
+# 🎨 Design Resources
+
+Wireframes include:
+
+Login/Sign Up Screen
+
+Product Listing Feed
+
+Add New Product Screen
+
+My Listings Management
+
+Product Detail View
+
+User Dashboard
+
+Shopping Cart Interface
+
+Purchase History
+
+----
+
+# 🌍 Environmental Impact
+
+EcoFinds contributes to environmental sustainability by:
+
+♻️ Reducing Waste: Extending product lifecycles
+
+🔄 Circular Economy: Promoting reuse over disposal
+
+🌱 Carbon Footprint: Reducing manufacturing demand
+
+👥 Community Building: Creating sustainable consumption habits
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

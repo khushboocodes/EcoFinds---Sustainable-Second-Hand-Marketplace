@@ -99,6 +99,7 @@ yarn start
 
 # 📁 Project Structure
 
+```bash
 project_full_connected/
 │
 ├── backend/                         # Django backend
@@ -137,6 +138,7 @@ project_full_connected/
 │           └── Dashboard.js          # Protected dashboard (profile info)
 │
 └── original_project/                 # Your original uploaded files (kept intact)
+```
 
 ---
 

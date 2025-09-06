@@ -1,0 +1,45 @@
+ 🌍 EcoFinds Frontend
+
+This is the *React frontend* for *EcoFinds*, a platform designed to connect eco-conscious users with sustainable products and solutions.  
+It provides a clean, modern UI for authentication, dashboards, and product browsing.
+
+---
+
+## 🚀 Features
+- 🔐 User Authentication (Login & Register)
+- 📊 Dashboard for managing activities
+- 🌐 API integration with Django backend
+- ⚡ Responsive and modern React design
+- 🛠 Utility functions for authentication handling
+
+---
+
+## 🛠 Tech Stack
+- *React.js* (Frontend framework)
+- *JavaScript (ES6+)*
+- *React Router* for navigation
+- *Axios* (API requests)
+- *CSS / Tailwind / Custom styling*
+
+---
+
+## 📂 Project Structure
+frontend/
+├── package.json # Dependencies & scripts
+├── public/
+│ └── index.html # Root HTML template
+└── src/
+├── api.js # API calls
+├── App.js # Main React app
+├── index.js # Entry point
+├── pages/ # Page components
+│ ├── Dashboard.js
+│ ├── Login.js
+│ └── Register.js
+└── utils/ # Utility functions
+├── auth.js
+└── init.js
+
+📜 License
+
+MIT License © 2025 EcoFinds Hackathon Team

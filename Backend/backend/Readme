@@ -1,0 +1,104 @@
+README BACKEND FILE
+EcoFinds Backend
+
+EcoFinds is a sustainable second-hand marketplace built to encourage responsible consumption by making it simple to buy and sell pre-owned items.
+This backend powers core functionalities such as user authentication, product listings, browsing, cart management, and purchase history.
+
+🚀 Features
+
+User Authentication: Register, login, and manage user profiles.
+
+Product Listings (CRUD): Create, read, update, and delete products.
+
+Search & Filtering: Browse listings with keyword search and category filtering.
+
+Cart Management: Add/remove products from the cart.
+
+Purchase History: Track previous purchases.
+
+REST API: Provides endpoints for frontend (web/mobile) integration.
+
+🛠️ Tech Stack
+
+Backend Framework: Django/ FastAPI 
+
+Database: postgreSQL
+
+Authentication: JWT / Session-based
+
+Language: Python
+
+backend/
+│── app/                  # Main application folder
+│   ├── routes/           # API routes (users, products, cart, etc.)
+│   ├── models/           # Database models
+│   ├── services/         # Business logic
+│   ├── utils/            # Helper functions (auth, validation, etc.)
+│   └── __init__.py
+│
+│── migrations/           # DB migrations (if used)
+│── requirements.txt      # Python dependencies
+│── config.py             # Configuration (DB, secrets, etc.)
+│── run.py                # Entry point to start backend server
+│── README.md             # This file
+
+⚙️ Setup Instructions
+1. Clone the Repository
+git clone https://github.com/your-username/ecofinds.git
+cd ecofinds/backend
+
+2. Create Virtual Environment & Install Dependencies
+python -m venv venv
+source venv/bin/activate   # On macOS/Linux
+venv\Scripts\activate      # On Windows
+
+pip install -r requirements.txt
+
+3. Configure Environment Variables
+Create a .env file in the backend folder:
+
+SECRET_KEY=your_secret_key
+DATABASE_URL=mysql://username:password@localhost/ecofinds
+DEBUG=True
+
+5. Start the Backend Server
+python run.py
+
+📡 API Endpoints
+User
+
+POST /auth/register → Register a new user
+
+POST /auth/login → Login and get token
+
+GET /users/me → Get current user profile
+
+Products
+
+POST /products/ → Create new product
+
+GET /products/ → Get all products
+
+GET /products/<id> → Get product by ID
+
+PUT /products/<id> → Update product
+
+DELETE /products/<id> → Delete product
+
+Cart
+
+POST /cart/add → Add product to cart
+
+GET /cart/ → View cart items
+
+DELETE /cart/remove/<id> → Remove item from cart
+
+Purchases
+
+GET /purchases/ → View previous purchase
+
+📜 License
+
+MIT License © 2025 EcoFinds Hackathon Team
+
+
